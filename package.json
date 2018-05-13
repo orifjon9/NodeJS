@@ -1,0 +1,23 @@
+{
+  "name": "firstexpressapp",
+  "version": "1.0.0",
+  "description": "Simple Node.js App",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orifjon9/NodeJS.git"
+  },
+  "author": "Orifjon O Narkulov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orifjon9/NodeJS/issues"
+  },
+  "homepage": "https://github.com/orifjon9/NodeJS#readme"
+}
