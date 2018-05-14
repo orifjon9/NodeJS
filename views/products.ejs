@@ -1,28 +1,30 @@
-<h1>The products list</h1>
+<% include partials/header %>
 
-<table border="1">
-    <tr>
-        <td>Id</td>
-        <td>Name</td>
-        <td>Brand name</td>
-        <td>Price</td>
-    </tr>
-    <% for(var i = 0; i<products.length; i++) {  %>
+    <table border="1">
         <tr>
-            <td>
-                <%= products[i].id %>
-            </td>
-            <td>
-                <a href="/products/<%= products[i].id %>">
-                    <%= products[i].name %>
-                </a>
-            </td>
-            <td>
-                <%= products[i].brandName %>
-            </td>
-            <td>
-                <%= products[i].price %>
-            </td>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Brand name</td>
+            <td>Price</td>
         </tr>
-        <% } %>
-</table>
+        <% for(var i = 0; i<products.length; i++) {  %>
+            <tr>
+                <td>
+                    <%= products[i].id %>
+                </td>
+                <td>
+                    <a href="/products/<%= products[i].id %>">
+                        <%= products[i].name %>
+                    </a>
+                </td>
+                <td>
+                    <%= products[i].brandName %>
+                </td>
+                <td>
+                    <%= products[i].price %>
+                </td>
+            </tr>
+            <% } %>
+    </table>
+
+    <% include partials/footer %>

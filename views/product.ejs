@@ -1,8 +1,14 @@
-<h1>This is a product page</h1>
-<h2>
-    <%= product.name %>
-</h2>
-<p>
-    <%= product.brandName%> $
-        <%= product.price%>
-</p>
+<% include partials/header %>
+
+    <body>
+        <h1>This is a product page</h1>
+        <h2>
+            <%= product.name %>
+        </h2>
+        <p>
+            <%= product.brandName%> $
+                <%= product.price%>
+        </p>
+    </body>
+
+    <% include partials/footer %>
