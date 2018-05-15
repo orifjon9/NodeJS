@@ -6,6 +6,7 @@
             <td>Name</td>
             <td>Brand name</td>
             <td>Price</td>
+            <td></td>
         </tr>
         <% for(var i = 0; i<products.length; i++) {  %>
             <tr>
@@ -23,8 +24,21 @@
                 <td>
                     <%= products[i].price %>
                 </td>
+                <td>
+                    <form action="/products/<%= products[i].id %>" method="delete">
+                        <input type="submit" value="remove">
+                    </form>
+                </td>
             </tr>
             <% } %>
     </table>
+    <br/>
+
+    <form action="/products" method="POST">
+        <input type="text" name="name" placeholder="Product Name">
+        <input type="text" name="brandName" placeholder="Brand Name">
+        <input type="number" name="price" placeholder="Price">
+        <input type="submit" value="Save">
+    </form>
 
     <% include partials/footer %>
