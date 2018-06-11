@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 
 
 app.use(express.static('public/css'));
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true })); // necessary to parse body of request otherwise server will get undefined
 
 app.set('view engine', 'ejs');
 
